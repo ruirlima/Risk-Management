@@ -62,7 +62,7 @@ df_CF_USD = df_fx.multiply(df['CF Local'],axis='index')
 print('\n-----------------------USD CASH FLOW---------------------')
 print(df_CF_USD)
 
-#-------------------------------------INTEREST RATE OF RETURN-----------------------------------------
+#-------------------------------------INTERNAL RATE OF RETURN-----------------------------------------
 # Calculate IRR (%) USD for each simulation
 irr_USD = [irr(df_CF_USD[i])*100 for i in range(i,MCS_num+1)]
 # Calculate IRR percentiles
